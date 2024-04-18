@@ -1,0 +1,12 @@
+Research and analyze which of the vulnerabilities appear to be related to the code that was deployed for the environment in this project.
+
+Bonus - provide recommendations on how to remediate the vulnerabilities.
+
+1. S3 buckets should have server-side encryption enabled: Enable S3 server-side
+   encryption
+
+2. VPC flow logging should be enabled in all VPCs: Enable VPC flow logging for
+   all VPCs
+
+3. Attached EBS volumes should be encrypted at-rest: Enable EBS server-side
+   encryption 

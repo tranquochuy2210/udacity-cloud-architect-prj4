@@ -1,0 +1,10 @@
+Based on the architecture diagram, and the steps you have taken so far to upload data and access the application web service, identify at least 2 obvious poor practices as it relates to security.  Include justification.
+
+# Poor practice 1
+    WebAppSG: The Recipe Web Service is behind an Application Load Balancer, but its security group have Inbound rules allow all trafic from internet to port 22  exposing the server to attacks. It also allows all egress traffic to any IP address.
+    it should only give accessible for loadblancer
+# Poor practice 2
+    AppLoadBalancerSG: The security group used by the Application Load Balanceris not forwarding port 80 (HTTP) to 443 (HTTPS).
+# Poor practice 3
+    Ec2 instance in public subnet
+#S3 bucket need to have encrypted configuration
